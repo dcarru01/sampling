@@ -40,30 +40,36 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+My goal with this survey is to identify any factors that may be driving the increased turnover among entry-level positions within the company by assessing employee satisfaction. Specifically, I want to gather data about employee satisfaction from more junior and senior employees, and identify any differences in satisfaction, and what factors may be driving those differences. The end product would ideally be a set of recommendations about what changes the company could implement to boost employee retention.
+
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
-```
-write your answer here...
-```
 
+```
+Our target population are all employees of the company who have worked at the company for at least 60 days (to ensure they have had meaningful time to assess working conditions). Our sampling frame is a list of all employee emails that meet our criteria (working for at least 60 days), while our sampling units are individual employees. The survey would be sent out as a company-wide email with all responses kept confidential and as much effort made as possible to ensure anonymity, although some information we want to collect such as the department/role for the employee could complicate that. 
+I would use stratified sampling with a quota, where employees are stratified by the time they have spent at the company. The exact criteria for differentiating the strata would need to be determined according to the available data about the number of employees and their relative seniority, however the strata would presumably not be of equal size. Although it might be more optimal to conduct probability sampling, there is often a lack of response to workplace satisfaction surveys, so quota sampling is more realistic where the quota is set according to the size of the strata sampled. This does risk creating a bias where employees that feel more strongly (either positively or negatively) are more likely to answer the survey.
+
+```
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1.	Which department/unit are you a member of? (select from drop-down list)
+2.	Rate your overall satisfaction with your current position at the company? (From 1 to 10 where 1 is extremely dissatisfied and 10 is extremely satisfied)
+The following questions have 3 options: Yes, No, Unsure/Prefer not to answer
+3.	Do you believe you have a long-term future within the company?
+4.	Do you feel your salary fairly compensates you for the work you are currently doing?
+5.	Do you feel a sense of belonging and community in your current role?
+6.	Do you feel there are appropriate avenues for advancement within the position?
+7.	Do you feel the company provides appropriate training and support for your role?
+8.	Do you feel the company appropriately values and respects your time outside of working hours?
+9.	Do you feel management appropriately supports your efforts and improves you ability to complete your responsibilities?
+The final question will be open ended to gather anecdotal information that may provide specific insights
+10.	Are there any factors beyond those mentioned above that positively or negatively impact your satisfaction within your current position? Are there any factors discussed above that you wish to elaborate on?
+
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +77,24 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+1. Sample type: Simple random sample stratified by geographic area. It’s a little unclear, but from my understanding each Census Metropolitan Area (CMA) was considered a separate stratum, with some CMAs grouped together in Ontario, Quebec and British Columbia. Areas outside of the CMAs within each province were each considered their own stratum. There was also rejective sampling to increase the proportion of respondents who were volunteers, where some non-volunteers would have interviews terminated early (and I think excluded?) upon determining they did not volunteer.
+2. Sample size: Target sample size was 20 thousand, the actual number of respondents was 16, 149.
+3. Target population: All persons 15 years of age and older (excluding residents of the Yukon, Northwest Territories, and Nunavut, and full-time residents of institutions)
+4. Sampling frame: List of phone numbers available to Stats Canada and the Address Register of all homes within the ten provinces
+5. Survey mode(s): Electronic self-completed questionnaires and telephone interviews
+6. Timeline: September to December of 2018
+7. Response rate: 41.9%
+8. Weights: Initial weighting was done based on the probability an individual household could be contacted, which was affected by available telephone numbers associated with that household. Out of scope and non-responses were removed. Person weights were calculated based on the number of eligible individuals living in individual households using the previously calculated household weighting. There was also some weighting for the rejective sampling according to the age of respondents (over or under 45). Finally, the person-weights were adjusted according to the population counts of their stratum, and the income, age, and sex of their province of residence.
+9. Data processing: Processing began with data capture, which was either performed directly by respondents to the online questionnaire, or by interviewers performing the phone interviews. Responses to open-ended questions were then coded into existing categories, new categories or “other” according to codes determined by Stats Canada. Charitable organizations were coded based on the International Classification of Nonprofit Organizations. Data was then weighted as described previously. Variable were then created through collapsing or combining response categories. Finally, some data was anonymized, particularly donations.
+10. Cleaning, imputation, etc: Duplicates, out of scope responses and non-responses were removed in an initial screening step. Imputation was used to fill in data from some item and partial non-responses using a scoring system where data would be imputed from the most similar donor response (the highest calculated score). Values that were imputed include income, hours volunteered (broken down into several sub-categories based on the type of volunteering), and donations made.
+11. Sources of error: The guide lists several sources of non-sampling error, mostly related to improper responses to questions (due to mistakes from the respondent or interviewer), or errors in the entry and analysis of the data. The guide also discusses non-response error, which was addressed with imputation where possible. Finally, the guide discusses sampling error, including the calculation of standard error and the coefficient of variance. I was unable to find these values within the guide or the report published online. To better determine the variance, bootstrapping was used to estimate the standard deviation.
+12. Limitations, known biases, etc: There is surprisingly little information on limitations and bias provided in the guide. An immediate limitation that seems apparent is the exclusion of the territories, seemingly from a result of the lack of coverage in the census. The format of the survey also biases responses towards individuals with stable housing given the methodology used to determine the sampling frame. The format of the survey requires respondents to have access to the internet or a phone, which could exclude some individuals. The 2023 version of the survey increased the response timeline and introduced a “targeted respondent” approach based on the results of the 2021 survey, which could improve the response rate and reduce non-response.
+13. Link to documentation and any additional sources used:
+Link for download of PUMF Guide for SGVP 2018: https://www150.statcan.gc.ca/n1/pub/45-25-0001/cat5/c33_2018.zip 
+Link to info on SGVP 2023: https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=4430
+Report on SGVP 2018: https://www150.statcan.gc.ca/n1/en/pub/75-006-x/2021001/article/00002-eng.pdf?st=8dOEEb6d
+
+
 ```
 
 ## Rubric
